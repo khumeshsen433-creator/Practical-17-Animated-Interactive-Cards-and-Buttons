@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Animation Cards</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .card {
+            display: inline-block;
+            background: lightblue;
+            padding: 30px;
+            margin: 20px;
+            transition: transform 0.5s,
+                        background 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1) rotate(5deg);
+            background: orange;
+        }
+
+        button {
+            padding: 12px 25px;
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Cards</h1>
+
+    <div class="card">HTML Card</div>
+    <div class="card">CSS Card</div>
+
+    <br><br>
+    <button>Click Me</button>
+</body>
+</html>
